@@ -7,3 +7,67 @@ body{
     font-family:'Inter',sans-serif;
     display: block;
 }
+.body_container{
+    margin: 0 auto;
+    display: flex;
+    border:0.25px solid grey;
+    overflow: hidden;
+    height: 600px;
+    border-radius: 12px;
+}
+.nav_container{
+    width: 250px;
+    display: flex;
+    background-color: #5B4FCF;
+    flex-direction: column;
+    padding: 20px;
+}
+.main_container{
+    width: 80%;
+     border-left:0.25px solid grey;
+     flex: 1;
+}
+.logo{
+    padding: 12px;
+}
+#logo_title{
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+#logo_icon{    
+    border-radius: 10px;
+    padding: 6px;
+    background-color: antiquewhite;
+}
+.nav{
+  
+    margin-top: 10px;
+}
+
+.nav h5, .setting h5{
+    padding:11px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.65);
+}
+.nav h5:hover, .setting h5:hover{
+    color: #fff;
+    background: rgba(255,255,255,0.16);
+}
+.setting{
+   margin-top: auto;
+}
+.title{
+display: inline;
+}
+.dp{
+    color: #fff;
+    background-color: #5B4FCF;
+    border-radius: 50%;
+    width: 41px;
+    padding: 12px;
+    font-weight: 600;
+    
+}
