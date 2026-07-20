@@ -16,7 +16,7 @@ body{
     border-radius: 12px;
 }
 .nav_container{
-    width: 250px;
+    width: 190px;
     display: flex;
     background-color: #5B4FCF;
     flex-direction: column;
@@ -59,15 +59,114 @@ body{
 .setting{
    margin-top: auto;
 }
-.title{
-display: inline;
+.dashboard{
+    padding: 20px;
+    background-color: #f7f6fb;
+}
+.dp_container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.title h3{
+  font-size: 19px;
+}
+#date{
+    color: gray;
+    margin-top: 4px;
 }
 .dp{
-    color: #fff;
+       color: #fff;
     background-color: #5B4FCF;
     border-radius: 50%;
-    width: 41px;
+    width: 37px;
+    height: 38px;
     padding: 12px;
     font-weight: 600;
     
+}
+.quote_container{
+    width: auto;
+    margin: 12px 0;
+    border: 0.25px solid #8080806e;
+    border-left: 3px solid #5B4FCF;
+    padding: 12px;
+    font-size: 13px;
+    border-radius: 10px;
+background-color: #fff;
+}
+.author_name{
+    font-size: 11px;
+    margin-top: 7px;
+    color: gray;
+}
+.dashboard_countdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.countdown{
+  padding: 10px;
+    border: 0.12px solid #8080806b;
+    width: 320px;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.count_task{
+    font-size: 24px;
+    color: #5b4fcf;
+}
+.todays_progress{
+    margin-top: 10px;
+}
+.progress_bar_bg{
+    width: 100%;
+    background-color: #e2e2e2;
+    border-radius: 2px;
+    height: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.progress_bar{
+    background-color: #5b4fcf;
+    width: 60%;
+    border-radius: 5px;
+    height: 10px;
+}
+.recent-tasks{
+    margin-top: 10px;
+}
+.recent_tasks_group{
+    border: 0.12px solid #8080806b;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+.recent_task_name{
+    flex:1;
+    padding: 5px;
+    font-size: 13px;
+}
+.recent_task_checkbox{
+    cursor: pointer;
+    width: 18px;
+    accent-color: #5B4FCF;
+}
+.recent_task_type{
+    font-size: 12px;
+    padding: 5px;
+    background: #001bff1a;
+    border-radius: 16px;
+}
+.dash{
+    text-decoration: line-through;
+    color: #9997b3;
+}
+.w{
+    background: #001bff1a;
+}
+.p{
+    background: #00ff3629;
 }

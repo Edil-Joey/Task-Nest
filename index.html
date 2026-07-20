@@ -27,13 +27,57 @@
     <div class="main_container">
         <!-- Dashboard -->
         <div class="dashboard">
-            <div><div class="title">
+            <div class="dp_container">
+                <div class="title">
                 <h3>Good Morning, Edil👋</h3>
                 <p id="date"></p>
             </div>
             <div class="dp">EJ</div>
             </div>
+
+            <div class="quote_container">
+               <i>"The secret of getting ahead is getting started."</i>
+               <p class="author_name">— Mark Twain</p>
+            </div>
+
+            <div class="dashboard_countdown">
+                <div class="countdown">
+                    <h4 class="count_task">4</h4>
+                    <p class="author_name">Tasks Today</p>
+                </div>
+                <div class="countdown">
+                    <h4 class="count_task">3</h4>
+                    <p class="author_name">Completed</p>
+                </div>
+                <div class="countdown">
+                    <h4 class="count_task">2</h4>
+                    <p class="author_name">Job Applied</p>
+                </div>
+                <div class="countdown">
+                    <h4 class="count_task">1</h4>
+                    <p class="author_name">Interview</p>
+                </div>
+            </div>
+
+            <div class="todays_progress">
+                <h5>Today's progress</h5>
+                <p class="author_name">5 of 8 tasks done</p>
+                <div class="progress_bar_bg">
+                    <div class="progress_bar"></div>
+                </div>
+            </div>
+
+            <div class="recent-tasks">
+                 <h5>Recent tasks</h5>
+                <div class="recent_tasks_group">
+                    <input class="recent_task_checkbox" onclick=recent_task_checked(this) type="checkbox">
+                    <span class="recent_task_name">Practice Js array for 30 min</span>
+                    <span class="recent_task_type w">Work</span>
+                </div>
+            </div>
+
         </div>
+
     </div>
     </div>
 </body>
