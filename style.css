@@ -41,18 +41,22 @@ body{
     padding: 6px;
     background-color: antiquewhite;
 }
-.nav{
+.nav_group{
   
     margin-top: 10px;
 }
 
-.nav h5, .setting h5{
+.nav_group h5, .setting h5{
     padding:11px;
     border-radius: 12px;
     cursor: pointer;
     color: rgba(255,255,255,0.65);
 }
-.nav h5:hover, .setting h5:hover{
+.nav_group h5:hover, .setting h5:hover{
+    color: #fff;
+    background: rgba(255,255,255,0.16);
+}
+.select{
     color: #fff;
     background: rgba(255,255,255,0.16);
 }
@@ -124,15 +128,15 @@ background-color: #fff;
     width: 100%;
     background-color: #e2e2e2;
     border-radius: 2px;
-    height: 10px;
+    height: 8px;
     overflow: hidden;
     margin-top: 10px;
 }
 .progress_bar{
     background-color: #5b4fcf;
     width: 60%;
-    border-radius: 5px;
-    height: 10px;
+    border-radius: 8px;
+    height: 8px;
 }
 .recent-tasks{
     margin-top: 10px;
@@ -170,3 +174,4 @@ background-color: #fff;
 .p{
     background: #00ff3629;
 }
+

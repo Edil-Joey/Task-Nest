@@ -8,25 +8,25 @@
 </head>
 <body>
     <div class="body_container">
-    <!-- Navigation container -->
-    <div class="nav_container">
+      <!-- Navigation container -->
+     <div class="nav_container">
         <div class="logo">
-           <span id="logo_icon">🪺</span> <span id="logo_title">TaskNest</span>
+           <span id="logo_icon" >🪺</span> <span id="logo_title">TaskNest</span>
         </div>
 
-        <div class="nav">
-            <h5>Dashboard</h5>
-            <h5>Tasks</h5>
-            <h5>Job Tracker</h5>
-            <h5>Progress</h5>
+        <div class="nav_group">
+            <h5 onclick="page_display('dashboard',this)" class="nav select">Dashboard</h5>
+            <h5 onclick="page_display('tasks',this)" class="nav">Tasks</h5>
+            <h5  onclick="page_display('tracker',this)" class="nav">Job Tracker</h5>
+            <h5  onclick="page_display('progress',this)" class="nav">Progress</h5>
         </div>
         <div class="setting"><h5>Settings</h5></div>
-    </div>
+     </div>
 
-    <!-- Main Container -->
-    <div class="main_container">
+      <!-- Main Container -->
+     <div class="main_container">
         <!-- Dashboard -->
-        <div class="dashboard">
+        <div class="dashboard page">
             <div class="dp_container">
                 <div class="title">
                 <h3>Good Morning, Edil👋</h3>
@@ -77,8 +77,19 @@
             </div>
 
         </div>
-
-    </div>
+         <!-- Tasks -->
+        <div class="tasks page">
+            <h3>Tasks</h3>
+        </div>
+         <!--Job tracker -->
+        <div class="tracker page">
+            <h3>Job Tracker</h3>
+        </div>
+        <!-- Progress -->
+        <div class="progress page">
+            <h3>Progress</h3>
+        </div>
+     </div>
     </div>
 </body>
 <script src="index.js"></script>
