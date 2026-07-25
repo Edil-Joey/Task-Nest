@@ -42,17 +42,16 @@ body{
     background-color: antiquewhite;
 }
 .nav_group{
-  
     margin-top: 10px;
 }
 
-.nav_group h5, .setting h5{
+.nav{
     padding:11px;
     border-radius: 12px;
     cursor: pointer;
     color: rgba(255,255,255,0.65);
 }
-.nav_group h5:hover, .setting h5:hover{
+.nav:hover{
     color: #fff;
     background: rgba(255,255,255,0.16);
 }
@@ -60,7 +59,7 @@ body{
     color: #fff;
     background: rgba(255,255,255,0.16);
 }
-.setting{
+.sett{
    margin-top: auto;
 }
 .dashboard{

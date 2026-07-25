@@ -9,10 +9,12 @@ let month=months_name[date.getMonth()];
 document.getElementById("date").innerHTML=(day +", "+ currentdate +" "+month+" "+year );
 //Saturday, 11 July 2026
 
-const pages=['dashboard','tasks','tracker','progress']
-()=>{
-
-}
+const pages=['tasks','tracker','progress','settings'];
+//Immediate invoke funtion to load when the page load
+(()=>{
+ console.log("pages");
+ pages.forEach(page=>document.querySelector("."+page).style.display='none');
+})();
 
 function recent_task_checked(val){
     let recent_task_checkbox=document.querySelector(".recent_task_name");
