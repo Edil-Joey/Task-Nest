@@ -62,7 +62,7 @@ body{
 .sett{
    margin-top: auto;
 }
-.dashboard{
+.page{
     padding: 20px;
     background-color: #f7f6fb;
 }
@@ -140,24 +140,24 @@ background-color: #fff;
 .recent-tasks{
     margin-top: 10px;
 }
-.recent_tasks_group{
+.recent_tasks_group,.tasks_group{
     border: 0.12px solid #8080806b;
     padding: 8px;
     border-radius: 10px;
     margin-top: 10px;
     display: flex;
 }
-.recent_task_name{
+.recent_task_name,.task_name{
     flex:1;
     padding: 5px;
     font-size: 13px;
 }
-.recent_task_checkbox{
+.recent_task_checkbox,.task_checkbox{
     cursor: pointer;
     width: 18px;
     accent-color: #5B4FCF;
 }
-.recent_task_type{
+.recent_task_type,.task_type{
     font-size: 12px;
     padding: 5px;
     background: #001bff1a;
@@ -174,3 +174,63 @@ background-color: #fff;
     background: #00ff3629;
 }
 
+.input:focus{
+    outline: none;
+    border-color: #7f77dd;
+    background: #fafaf9;
+}
+
+.task_add_container,.job_tr_add_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    height: 32px;
+    gap: 14px;
+}
+.task_input, .job_tracker_input{
+    padding: 7px;
+    flex: 1;
+    border-radius: 7px;
+    border: 0.23px solid #80808063;
+    outline: none;
+}
+.task_type_option,.job_tr_type_option{
+    width: 8%;
+    padding: 7px;
+    border-radius: 7px;
+    outline: none;
+     border: 0.23px solid #80808063;
+}
+.add_task_btn{
+    width: 7%;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 8px;
+    outline: none;
+    background: #5b4fcf;
+    cursor: pointer;
+}
+.task_filter_container,.job_tr_filter_container{
+    margin-top: 10px;
+}
+.slt{
+    color: #fff !important;
+    background-color: #5B4FCF !important;
+}
+.task_filter,.job_tr_filter{
+    color: black;
+    background: white;
+    padding: 6px 10px;
+    border: 0.23px solid #80808063;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.job_tr_group
+{   border: 0.12px solid #8080806b;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    font-size: 12px;
+}

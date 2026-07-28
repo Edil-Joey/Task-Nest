@@ -70,20 +70,109 @@
             <div class="recent-tasks">
                  <h5>Recent tasks</h5>
                 <div class="recent_tasks_group">
-                    <input class="recent_task_checkbox" onclick=recent_task_checked(this) type="checkbox">
+                    <input class="recent_task_checkbox" onclick=task_checked(this) type="checkbox">
                     <span class="recent_task_name">Practice Js array for 30 min</span>
                     <span class="recent_task_type w">Work</span>
+                </div>
+                <div class="recent_tasks_group">
+                    <input class="recent_task_checkbox" onclick=task_checked(this) type="checkbox">
+                    <span class="recent_task_name">Prayer do</span>
+                    <span class="recent_task_type p">Personal</span>
                 </div>
             </div>
 
         </div>
          <!-- Tasks -->
         <div class="tasks page">
-            <h3>Tasks</h3>
+            <!-- dp container -->
+            <div class="dp_container">
+                <div class="title">
+                <h3>Tasks</h3>
+                <p class="author_name">Manage your daily to-do list</p>
+            </div>
+             <div class="dp">EJ</div>
+            </div>
+            <!-- task adding -->
+             <div class="task_add_container">
+                <input type="text" id="task_ip" class="task_input" placeholder="Enter a task...">
+                <select class="task_type_option" id="type_option">
+                    <option id="work">Work</option>
+                     <option id="personal">Personal</option>
+                </select>
+                <button class="add_task_btn" onclick="add_task()"> + Add task</button>
+             </div>
+             <!-- Filters -->
+             <div class="task_filter_container">
+                <button class="task_filter slt" onclick="filter('.task_filter','all',this)">All</button>
+                <button class="task_filter" onclick="filter('.task_filter','active',this)">Active</button>
+                <button class="task_filter" onclick="filter('.task_filter','completed',this)">Completed</button>
+             </div>
+            <!-- Task Container -->
+             <div class="task_container">
+             <div class="tasks_group">
+                    <input class="task_checkbox" onclick=task_checked(this) type="checkbox">
+                    <span class="task_name">Practice Js array for 30 min</span>
+                    <span class="task_type w">Work</span>
+                </div>
+                 <div class="tasks_group">
+                    <input class="task_checkbox" checked onclick=task_checked(this) type="checkbox">
+                    <span class="task_name dash">Workout</span>
+                    <span class="task_type p">Personal</span>
+                </div>
+                 <div class="tasks_group">
+                    <input class="task_checkbox" onclick=task_checked(this) type="checkbox">
+                    <span class="task_name">Task for 30 min</span>
+                    <span class="task_type w">Work</span>
+                </div>
+                 <div class="tasks_group">
+                    <input class="task_checkbox" checked onclick=task_checked(this) type="checkbox">
+                    <span class="task_name dash">Prayer</span>
+                    <span class="task_type p">Personal</span>
+                </div>
+             </div>
+             
+           
         </div>
          <!--Job tracker -->
         <div class="tracker page">
-            <h3>Job Tracker</h3>
+            <!-- dp container -->
+            <div class="dp_container">
+                <div class="title">
+                 <h3>Job Tracker</h3>
+                <p class="author_name">Track every application you send</p>
+            </div>
+             <div class="dp">EJ</div>
+            </div>
+            <!-- Job adding -->
+           <div class="job_tr_add_container">
+                <input type="text" id="job_title_ip" class="job_tracker_input" placeholder="Job title...">
+                <input type="text" id="company_name_ip" class="job_tracker_input" placeholder="Company name...">
+                <input type="date" id="applied_date_ip" class="job_tracker_input">
+                <select class="job_tr_type_option" id="status_option">
+                    <option id="work">Applied</option>
+                     <option id="personal">Interview</option>
+                      <option id="personal">Offer</option>
+                       <option id="personal">Rejected</option>
+                </select>
+                <button class="add_task_btn" onclick="add_task()"> + Add task</button>
+             </div>
+             <!-- Filter -->
+              <div class="job_tr_filter_container">
+                <button class="job_tr_filter slt" onclick="filter('.job_tr_filter','all',this)">All</button>
+                <button class="job_tr_filter" onclick="filter('.job_tr_filter','applied',this)">Applied</button>
+                 <button class="job_tr_filter" onclick="filter('.job_tr_filter','interview',this)">Interview</button>
+                  <button class="job_tr_filter" onclick="filter('.job_tr_filter','offer',this)">Offer</button>
+                <button class="job_tr_filter" onclick="filter('.job_tr_filter','rejected',this)">Rejected</button>
+             </div>
+             <!-- Job Tracker Container -->
+            <div class="job_tracker_container">
+              <div class="job_tr_group">
+                <div style="flex: 1;">
+                    <div>Frontend Developer</div>
+                    <div>Zoho . Applied 8 Jul</div>
+                </div>
+              </div>
+            </div>
         </div>
         <!-- Progress -->
         <div class="progress page">
@@ -96,6 +185,6 @@
      </div>
     </div>
 </body>
-<script src="index.js"></script>
+<script src="index.js" defer></script>
 </html>         
                <!-- <div class="dp">EJ</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     -->
