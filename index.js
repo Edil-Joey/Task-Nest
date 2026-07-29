@@ -40,7 +40,6 @@ function filter(filter,where,type){
 
   let group=document.querySelectorAll(".tasks_group");
   group.forEach(task=>{
-    console.log(where);
   let dashed=task.querySelector(".task_name").classList.contains("dash");
 
   switch(where){
@@ -89,4 +88,49 @@ function add_task(){
 document.getElementById("task_ip").value=" ";task="";task_type="";
 
   }
+}
+
+// in job tracker section, while adding the job to track
+function add_job_tracker(){
+  let job_title=document.getElementById("job_title_ip").value;
+  let company_name=document.getElementById("company_name_ip").value;
+  let applied_date=document.getElementById("applied_date_ip").value;
+  if(!(job_title && company_name && applied_date)){
+    return console.error("no val");
+  }
+  let job_status=document.getElementById("status_option").value;
+ 
+  let row=` <div class="job_tr_group">
+                <div style="flex: 1;">
+                    <div>${job_title}</div>
+                    <div class="author_name">${company_name} . Applied ${applied_date} Jul</div>
+                </div>
+                 <select class="job_tr_option" id="jobtr_status_option" onchange="changeStatus(this)">
+                    <option id="work">Applied</option>
+                     <option id="interview">Interview</option>
+                      <option id="offer">Offer</option>
+                       <option id="rejected">Rejected</option>
+                </select>
+                 <span class="job_status">${job_status}</span>
+                 <span class="del" onclick="delJob(this)">Trash</span>
+              </div>`;
+  let job_tr_container=document.querySelector(".job_tracker_container");
+  job_tr_container.insertAdjacentHTML("beforeend",row);
+}
+
+
+function changeStatus(stats){
+  let status=stats.value;
+ let job_status_class= stats.closest(".job_tr_group").querySelector(".job_status");
+ job_status_class.innerHTML=status;
+let val;
+  switch (status){
+  case "Applied":val= "a";break;
+  case "Interview":val="i";break;
+  case "Offer":val="o";break;
+  case "Rejected":val="r";break;
+ };
+  job_status_class.classList.remove("a", "i", "o", "r");
+ job_status_class.classList.add(val);
+console.log(stats.value);
 }

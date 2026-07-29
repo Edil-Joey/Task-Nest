@@ -154,7 +154,7 @@
                       <option id="personal">Offer</option>
                        <option id="personal">Rejected</option>
                 </select>
-                <button class="add_task_btn" onclick="add_task()"> + Add task</button>
+                <button class="add_task_btn" onclick="add_job_tracker()"> + Add</button>
              </div>
              <!-- Filter -->
               <div class="job_tr_filter_container">
@@ -169,8 +169,16 @@
               <div class="job_tr_group">
                 <div style="flex: 1;">
                     <div>Frontend Developer</div>
-                    <div>Zoho . Applied 8 Jul</div>
+                    <div class="author_name">Zoho . Applied 8 Jul</div>
                 </div>
+                 <select class="job_tr_option" id="jobtr_status_option" onchange="changeStatus(this)">
+                    <option id="work">Applied</option>
+                     <option id="interview">Interview</option>
+                      <option id="offer">Offer</option>
+                       <option id="rejected">Rejected</option>
+                </select>
+                 <span class="job_status r">Rejected</span>
+                 <span class="del" onclick="delJob(this)">Trash</span>
               </div>
             </div>
         </div>

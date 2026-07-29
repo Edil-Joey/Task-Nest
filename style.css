@@ -157,7 +157,7 @@ background-color: #fff;
     width: 18px;
     accent-color: #5B4FCF;
 }
-.recent_task_type,.task_type{
+.recent_task_type,.task_type,.job_status{
     font-size: 12px;
     padding: 5px;
     background: #001bff1a;
@@ -201,6 +201,13 @@ background-color: #fff;
     outline: none;
      border: 0.23px solid #80808063;
 }
+.job_tr_option{
+    width: 8%;
+    padding: 7px;
+    border-radius: 7px;
+    outline: none;
+     border: 0.23px solid #80808063;
+}
 .add_task_btn{
     width: 7%;
     color: #fff;
@@ -233,4 +240,30 @@ background-color: #fff;
     margin-top: 10px;
     display: flex;
     font-size: 12px;
+}
+.r{
+background-color: #FCEBEB;
+}
+.o{
+ background-color:   #EEEDfe;
+}
+.i{
+    background-color: #E1F5EE;
+}
+.a{
+    background-color: #EEEDfe;
+}
+.job_status{
+    font-size: 12px;
+    background: #001bff1a;
+    padding: 8px 9px;
+    margin: 0 7px;
+    border-radius: 16px;
+}
+.del{
+        padding: 8px;
+    color: #bc0909d1;
+    cursor: grab;
+    font-weight: 700;
+    font-size: 14px;
 }
