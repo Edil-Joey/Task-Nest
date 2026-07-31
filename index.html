@@ -149,7 +149,7 @@
                 <input type="text" id="company_name_ip" class="job_tracker_input" placeholder="Company name...">
                 <input type="date" id="applied_date_ip" class="job_tracker_input">
                 <select class="job_tr_type_option" id="status_option">
-                    <option id="work">Applied</option>
+                    <option id="work" selected>Applied</option>
                      <option id="personal">Interview</option>
                       <option id="personal">Offer</option>
                        <option id="personal">Rejected</option>
@@ -158,11 +158,11 @@
              </div>
              <!-- Filter -->
               <div class="job_tr_filter_container">
-                <button class="job_tr_filter slt" onclick="filter('.job_tr_filter','all',this)">All</button>
-                <button class="job_tr_filter" onclick="filter('.job_tr_filter','applied',this)">Applied</button>
-                 <button class="job_tr_filter" onclick="filter('.job_tr_filter','interview',this)">Interview</button>
-                  <button class="job_tr_filter" onclick="filter('.job_tr_filter','offer',this)">Offer</button>
-                <button class="job_tr_filter" onclick="filter('.job_tr_filter','rejected',this)">Rejected</button>
+                <button class="job_tr_filter slt" onclick="filter('.job_tr_filter','All',this)">All</button>
+                <button class="job_tr_filter" onclick="filter('.job_tr_filter','Applied',this)">Applied</button>
+                 <button class="job_tr_filter" onclick="filter('.job_tr_filter','Interview',this)">Interview</button>
+                  <button class="job_tr_filter" onclick="filter('.job_tr_filter','Offer',this)">Offer</button>
+                <button class="job_tr_filter" onclick="filter('.job_tr_filter','Rejected',this)">Rejected</button>
              </div>
              <!-- Job Tracker Container -->
             <div class="job_tracker_container">
